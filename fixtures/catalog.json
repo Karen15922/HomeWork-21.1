@@ -1,0 +1,94 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "category_name": "Велосипеды",
+      "description": "новые велосипеды",
+      "products_in_category": null
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "category_name": "самокаты",
+      "description": "новые самокаты",
+      "products_in_category": null
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "category_name": "ролики",
+      "description": "ролики, коньки",
+      "products_in_category": null
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "product_name": "Велосипед",
+      "product_description": "новый",
+      "product_image": "11.png",
+      "product_category": 1,
+      "product_purchase_price": "5000.00",
+      "created_at": "2024-08-06",
+      "update_at": "2024-08-06"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "product_name": "Самокат",
+      "product_description": "б/у",
+      "product_image": "2.png",
+      "product_category": 1,
+      "product_purchase_price": "3000.00",
+      "created_at": "2024-08-06",
+      "update_at": "2024-08-06"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "product_name": "ролики",
+      "product_description": "новые",
+      "product_image": "3.png",
+      "product_category": 3,
+      "product_purchase_price": "3500.00",
+      "created_at": "2024-08-06",
+      "update_at": "2024-08-06"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "product_name": "коньки",
+      "product_description": "б/у, но как  живые",
+      "product_image": "4.png",
+      "product_category": 3,
+      "product_purchase_price": "500.00",
+      "created_at": "2024-08-06",
+      "update_at": "2024-08-06"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "product_name": "Велосипед",
+      "product_description": "новый/детский",
+      "product_image": "5.png",
+      "product_category": 1,
+      "product_purchase_price": "5000.00",
+      "created_at": "2024-08-06",
+      "update_at": "2024-08-06"
+    }
+  }
+]
