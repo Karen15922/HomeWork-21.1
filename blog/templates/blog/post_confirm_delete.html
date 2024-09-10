@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-12">
+<div class="col-row text-center">
+<div class="col-6 offset-md-3">
+<div class="card">
+<div class="card-body">
+<form method="post">
+	{% csrf_token %}
+	<p>Хотите удалить пост "{{ object.title }}"</p>
+	<button type="submit" class="btn btn-danger">
+		Подтвердить
+	</button>
+	<a href="{% url 'blog:list' %}" class="btn btn-warning">Отмена</a>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
