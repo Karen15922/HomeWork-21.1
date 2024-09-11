@@ -19,7 +19,7 @@
                         <h1 class="card-title pricing-card-title">{{ product.price }}р</h1>
                         <img src="{{ product.product_image | media_filter}}" class="img-fluid">
                         <p>{{ product.product_description | slice:20 }}...</p>
-                        <a role="button" href="{% url 'catalog:product' product.pk %}" class=" btn btn-lg btn-block btn-outline-primary">Подробнее</a>
+                        <a role="button" href="{% url 'catalog:product_view' product.pk %}" class=" btn btn-lg btn-block btn-outline-primary">Подробнее</a>
                     </div>
                 </div>
             </div>
