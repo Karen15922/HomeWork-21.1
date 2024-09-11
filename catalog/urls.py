@@ -15,13 +15,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
-from catalog.apps import CatalogConfig
-from catalog.views import contacts, products_list, product
+from .views import ContactsView, ProductsListView, ProductView, product
 
-app_name = CatalogConfig.name
+app_name = 'catalog'  # Устанавливаем пространство имен для приложения
 
 urlpatterns = [
-    path('', products_list, name='home'),
-    path('contacts/', contacts, name='contacts'),
-    path('product/<int:pk>', product, name='product')
+    path('', ProductsListView.as_view(), name='products_list'),  # URL для списка продуктов
+    path('product/<int:pk>/', ProductView.as_view(), name='product_view'),  # URL для отдельного продукта
+    path('contacts/', ContactsView.as_view(), name='contacts'),
+    path('custom_product/<int:pk>/', product, name='custom_product_view'),
 ]
